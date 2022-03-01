@@ -1,0 +1,104 @@
+:root {
+	--cyan: hsl(179, 62%, 43%);
+	--bright-yellow: hsl(71, 73%, 54%);
+	--light-gray: hsl(204, 43%, 93%);
+	--white: hsl(0, 0%, 100%);
+	--grayish-blue: hsl(179, 47%, 52%);
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Karla', sans-serif;
+	background-color: var(--light-gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 1.5em;
+	color: var(--cyan);
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+#component {
+	width: 90%;
+	margin: 2em 0;
+	box-shadow: 0px 10px 15px 5px hsla(179, 47%, 52%, 0.2);
+}
+
+.section {
+	padding: 1em 1.5em;
+	line-height: 1.5em;
+}
+
+.first-section {
+	background-color: var(--white);
+	border-radius: 5px 5px 0 0;
+}
+
+.first-section h2 {
+	color: var(--bright-yellow);
+}
+
+.first-section p {
+	opacity: 0.6;
+}
+
+.second-section {
+	background-color: var(--cyan);
+	color: var(--white);
+}
+
+#price {
+	font-weight: 700;
+	font-size: 2em;
+	margin: 0;
+}
+
+#price span {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--light-gray);
+	opacity: 0.6;
+}
+
+#sign-up-button {
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	padding: 0.8em;
+	margin: 1em 0;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 10px 15px 8px hsla(0, 0%, 0%, 0.1);
+	text-shadow: 0px 0px 8px hsla(0, 0%, 0%, 0.15);
+	color: var(--light-gray);
+	background-color: var(--bright-yellow);
+}
+
+.third-section {
+	background-color: var(--grayish-blue);
+	color: var(--light-gray);
+	border-radius: 0 0 5px 5px;
+}
+
+.third-section h2 {
+	color: var(--white);
+}
+
+.third-section ul {
+	list-style: none;
+	padding: 0;
+	opacity: 0.8;
+}
+
+#attribution {
+	text-align: center;
+}
