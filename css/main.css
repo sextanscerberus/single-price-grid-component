@@ -53,12 +53,13 @@ h2 {
 .second-section {
 	background-color: var(--cyan);
 	color: var(--white);
+	padding-bottom: 2em;
 }
 
 #price {
 	font-weight: 700;
 	font-size: 2em;
-	margin: 0;
+	margin: 1em 0 0;
 }
 
 #price span {
@@ -74,7 +75,7 @@ h2 {
 	font-weight: 700;
 	width: 100%;
 	padding: 0.8em;
-	margin: 1em 0;
+	margin-top: 1em 0;
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0px 10px 15px 8px hsla(0, 0%, 0%, 0.1);
@@ -101,4 +102,66 @@ h2 {
 
 #attribution {
 	text-align: center;
+}
+
+@media (min-width: 540px) {
+	#component {
+		width: 70%;
+	}
+}
+
+@media (min-width: 800px) {
+	body {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#component {
+		margin: 0;
+		width: 85%;
+		display: flex;
+		flex-wrap: wrap;
+		border-radius: 15px;
+	}
+
+	.section {
+		flex-grow: 1;
+		padding: 1em 2.5em;
+	}
+
+	.first-section {
+		border-radius: 15px 15px 0 0;
+		height: 50%;
+	}
+
+	.second-section {
+		border-radius: 0 0 0 15px;
+	}
+
+	#sign-up-button {
+		margin-top: 0.5em;
+	}
+
+	.third-section {
+		border-radius: 0 0 15px 0;
+	}
+
+	#attribution {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	#component {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1280px) {
+	#component {
+		width: 50%;
+	}
 }
